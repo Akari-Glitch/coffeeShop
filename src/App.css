@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+body::-webkit-scrollbar{
+    background: #fff;
+    border-radius: 4px;
+    width: 8px;
+    height: 8px;    
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #272f37;
+    border-radius: 5px;
+}
