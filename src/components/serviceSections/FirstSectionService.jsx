@@ -1,40 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import portada from "../../images/portada.jpg";
-
-const StyledFirstSection = styled.div`
+import services from "../../images/services.jpg";
+const StyledFirstSectionService = styled.div`
   margin-bottom: 150px;
   .background {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     background-color: rgba(0, 0, 0, 0.8);
-    background-image: url(${portada});
+    background-image: url(${services});
     width: auto;
     border-radius: 10px;
     margin-right: 70px;
     margin-left: 70px;
-    height: 83vh;
+    height: 73vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  }
-  .button {
-    display: flex;
-    align-items: center;
-    justify-content: Center;
-    width: 200px;
-    margin-top: 50px;
-    border-radius: 5px;
-    height: 50px;
-    background: #0e8684;
-    transition: 0.6s;
-  }
-
-  .button:hover {
-    transform: scale(1.1);
   }
   section {
     display: flex;
@@ -106,37 +89,21 @@ const StyledFirstSection = styled.div`
     }
   }
 `;
-function FirstSection() {
-  const scrollToUp = () => {
-    window.scrollTo({
-      top: 0,
-    });
-  };
-
-  const handle = () => {
-    scrollToUp();
-  };
+function FirstSectionService() {
   return (
-    <StyledFirstSection>
+    <StyledFirstSectionService>
       <div className="background">
         <section>
-          <h1>
-            Great coffee <br /> made simple.
-          </h1>
+          <h1>Create a plan</h1>
           <p>
-            Start your mornings with the world's best coffees. Try our expertly
-            curated artisan coffees from our best roasters delivery directly
-            toyour door, at your schedule.
+            Build subscription plan that best fits your needs. We offer an
+            assortment of the best artisan coffees from around the globe
+            delivered fresh to your door.
           </p>
-          <div className="button">
-            <Link to="/services" className="text-button" onClick={handle}>
-              Create your plan
-            </Link>
-          </div>
         </section>
       </div>
-    </StyledFirstSection>
+    </StyledFirstSectionService>
   );
 }
 
-export default FirstSection;
+export default FirstSectionService;

@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import LocalCafeIcon from "@material-ui/icons/LocalCafe";
-
 const StyledNavbar = styled.header`
   margin-bottom: 60px;
   div {
@@ -169,6 +168,16 @@ function Navbar() {
     }
   });
 
+  const scrollToUp = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
+  const handle = () => {
+    scrollToUp();
+  };
+
   return (
     <StyledNavbar>
       <div className={sticky}>
@@ -187,13 +196,13 @@ function Navbar() {
           className={menu ? "active" : null}
           onClick={menu ? handleMenu : null}
         >
-          <li>
+          <li onClick={handle}>
             <Link to="/">HOME</Link>
           </li>
-          <li>
+          <li onClick={handle}>
             <Link to="/about">ABOUT US</Link>
           </li>
-          <li>
+          <li onClick={handle}>
             <Link to="/services">CREATE YOUR PLAN</Link>
           </li>
         </ul>

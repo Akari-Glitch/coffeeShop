@@ -35,7 +35,7 @@ function Footer() {
     <StyledFooter>
       <div className="text-footer">
         <h1>Coffee Shop</h1>
-        <p>A project made in react. By Akari and WhiLEx117</p>
+        <p>A project made in react. By Akari</p>
       </div>
       <a href="">
         <GitHubIcon className="github-icon" />
