@@ -162,7 +162,8 @@ export const OrderCoffee = () => {
                   id={`Card${item}`}
                   value={item}
                   checked={coffee.grind === item}
-                  type="check"
+                  ty
+                  pe="check"
                   onChange={handleCheck}
                   name="grind"
                 />

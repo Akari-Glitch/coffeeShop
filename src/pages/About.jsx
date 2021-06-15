@@ -1,9 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import FirstSectionAbout from "../components/aboutSections/FirstSectionAbout.jsx";
 import SecondSectionAbout from "../components/aboutSections/SecondSectionAbout.jsx";
 import ThirdSectionAbout from "../components/aboutSections/ThirdSectionAbout.jsx";
 import FourthSectionAbout from "../components/aboutSections/FourthSectionAbout.jsx";
-function About(props) {
+function About() {
   return (
     <>
       <FirstSectionAbout />
